@@ -32,10 +32,9 @@
         <br>
 
         Favorite programming languages:
-        <div style="display: flex; flex-direction: row; gap: 0.5rem; border: 1px solid red;">
-            <input type="radio" th:field="*{favoriteLanguage}" th:each="tempLang : ${languages}" th:value="${tempLang}"
-                th:text="${tempLang}">
-        </div>
+
+        <input type="radio" th:field="*{favoriteLanguage}" th:each="tempLang : ${languages}" th:value="${tempLang}"
+            th:text="${tempLang}">
 
 
         <br>
@@ -43,9 +42,8 @@
 
         Operating systems:
 
-        <input type="checkbox" th:field="*{favoriteSystem}" th:each="tempSystem : ${favoriteSystem}" th:value="${tempSystem}"
-            th:text="${tempSystem}">
-
+        <input type="checkbox" th:field="*{favoriteSystem}" th:each="tempSystem : ${favoriteSystem}"
+            th:value="${tempSystem}" th:text="${tempSystem}">
 
         <br>
         <br>
